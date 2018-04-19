@@ -87,7 +87,10 @@ int main(int argc, char **argv)
     }
     
     int error = 0;
+    ROS_INFO("Check");
+    system("pause");
     while(error!=1){
+        
         // Subscribe to laser scanner data
         ros::Subscriber sub = n.subscribe<sensor_msgs::LaserScan>("/scan", 1000, scanCallback);
     }
